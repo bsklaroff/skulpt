@@ -1,4 +1,4 @@
-#!/usr/bin/env python2.6
+#!/usr/bin/env python
 
 #
 #   Note:  python2.6 is specified because that is what the skulpt parser
@@ -399,7 +399,7 @@ def dist(options):
         linemap.close()
         uncompfn = "{0}/{1}".format(DIST_DIR, OUTFILE_REG)
         open(uncompfn, "w").write(combined)
-        # Prevent accidental editing of the uncompressed distribution file. 
+        # Prevent accidental editing of the uncompressed distribution file.
         os.system("chmod 444 {0}/{1}".format(DIST_DIR, OUTFILE_REG))
 
 
